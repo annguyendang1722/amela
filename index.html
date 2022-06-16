@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
+  <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick.css">
+</head>
+
+<body id="allsite">
+  <header>
+    <div class="header header__pc">
+      <div class="container header__container">
+        <div class="header__logo">
+          <a href="#">
+            <img src="images/logo-svg.png" alt="">
+          </a>
+        </div>
+        <div class="header__right">
+          <div class="header__menu" id="header__scroll">
+            <ul>
+              <li>
+                <a href="#">Giới thiệu</a>
+              </li>
+              <li>
+                <a href="#">Dịch vụ </a>
+              </li>
+              <li>
+                <a href="/">Giao nhận hàng hóa </a>
+              </li>
+              <li>
+                <a href="#">Tin tức </a>
+              </li>
+              <li>
+                <a href="#">Liên hệ </a>
+              </li>
+              <li>
+                <a href="#">Tra cứu vận đơn </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__language">
+            <ul>
+              <li>
+                <a target="_blank" href="https://amela.co.jp/">
+                  <img src="https://amela.vn/wp-content/themes/anothemes2/images/assets/jp.png">Japan
+                </a>
+              </li>
+              <li>
+                <a><img src="https://amela.vn/wp-content/themes/anothemes2/images/assets/globe.png">vn<i
+                    class="ico-down-arrow"></i>
+                </a>
+                <ul class="open">
+                  <li>Việt Nam</li>
+                  <li><a href="https://amela.vn/en/">English</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="headermobile leftsidebar__logo">
+      <div class="headermobile__left">
+        <a href="#">
+          <img class="leftsidebar__logo--white" src="images/logo-svg.png" alt="brand">
+          <img class="leftsidebar__logo--black" src="images/logo-svg.png" alt="brand">
+        </a>
+      </div>
+      <div class="headermobile__right">
+        <div class="headermobile__changbg" id="leftsidebar__changbg--mobile">
+          <span class="leftsidebar__changbg--white">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+              width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z">
+              </path>
+            </svg>
+          </span>
+          <span class="leftsidebar__changbg--black">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+              width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z">
+              </path>
+            </svg>
+          </span>
+        </div>
+        <div class="open" id="openmenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div id="mySidenav" class="leftsidebar">
+      <a href="javascript:void(0)" class="closemenu" id="closemenu">&times;</a>
+      <div class="leftsidebar__logo" id="leftsidebar__logo">
+        <a href="#">
+          <img class="leftsidebar__logo--white" src="images/logo-svg.png" alt="brand">
+          <img class="leftsidebar__logo--black" src="images/logo-svg.png" alt="brand">
+        </a>
+        <div class="leftsidebar__changbg" id="leftsidebar__changbg">
+          <span class="leftsidebar__changbg--white">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+              width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z">
+              </path>
+            </svg>
+          </span>
+          <span class="leftsidebar__changbg--black">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+              width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z">
+              </path>
+            </svg>
+          </span>
+        </div>
+      </div>
+
+
+
+      <div class="leftsidebar__menu">
+        <div class="leftsidebar__language header__language">
+          <ul>
+            <li>
+              <a target="_blank" href="https://amela.co.jp/">
+                <img src="https://amela.vn/wp-content/themes/anothemes2/images/assets/jp.png">Japan
+              </a>
+            </li>
+            <li>
+              <a><img src="https://amela.vn/wp-content/themes/anothemes2/images/assets/globe.png">vn<i
+                  class="ico-down-arrow"></i>
+              </a>
+              <ul class="open">
+                <li>Việt Nam</li>
+                <li><a href="https://amela.vn/en/">English</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul id="clickmenu" class="clickmenu">
+          <li class="clickmenu__item clickmenu__active">
+            <a href="#home">Home</a>
+          </li>
+          <li class="clickmenu__item">
+            <a href="#about">About</a>
+          </li>
+          <li class="clickmenu__item">
+            <a href="#service">Service</a>
+          </li>
+          <li class="clickmenu__item">
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li class="clickmenu__item">
+            <a href="#testimonial">Testimonial</a>
+          </li>
+          <li class="clickmenu__item">
+            <a href="#blog">Blog</a>
+          </li>
+          <li class="clickmenu__item">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </header>
+  <div class="rightsidebar">
+    <section class="bannervideo">
+      <video playsinline="" autoplay="" muted="" loop="" id="video-sp">
+        <source src="https://amela.vn/wp-content/uploads/2021/08/video_sp.webm" type="video/webm">
+        <source src="https://amela.vn/wp-content/uploads/2021/08/video_sp.mp4" type="video/mp4">
+      </video>
+      <div class="bannervideo__content">
+        <div class="container">
+          <div class="bannervideo__inner">
+            <h1 class="bannervideo__title">Không ngừng sáng tạo cho mỗi sản phẩm mình tạo ra</h1>
+            <p>AMELA Technology JSC. (viết tắt: AMELA) là doanh nghiệp cung cấp các dịch vụ phát triển phần mềm và CNTT
+              có
+              trụ sở chính tại Hà Nội, được thành lập từ năm 2019. Chúng tôi mang trong mình sự quyết tâm, lòng nhiệt
+              huyết tuổi trẻ, sự nỗ lực để ngày một phát triển và đóng góp nhiều hơn cho tiến bộ xã hội.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advancedmedia">
+      <div class="advancedmedia__row">
+        <div class="advancedmedia__col">
+
+          <div class="advancedmedia__brand">
+            <p><span>A</span>dvanced</p>
+            <p><span>Me</span>dia</p>
+            <p><span>La</span>boratory</p>
+          </div>
+          <div class="advancedmedia__statistics">
+            <div class="advancedmedia__statistics-item">
+              <span>100+</span>
+              <span>Khách hàng</span>
+            </div>
+            <div class="advancedmedia__statistics-item">
+              <span>200+</span>
+              <span>Dự án đã thực hiện</span>
+            </div>
+            <div class="advancedmedia__statistics-item">
+              <span>250+</span>
+              <span>Nhân sự hiện có</span>
+            </div>
+            <div class="advancedmedia__statistics-flag">
+              <img src="https://amela.vn/wp-content/uploads/2021/07/flag-vn.jpg">
+              <img src="https://amela.vn/wp-content/uploads/2021/07/flag-jp.jpg">
+            </div>
+            <div class="advancedmedia__statistics-link">
+              <a href="https://amela.vn/ve-chung-toi/" class="advancedmedia__link" target="_blank">Xem chi tiết<img
+                  src="https://amela.vn/wp-content/themes/anothemes2/images/arrow-right.png"
+                  class="advancedmedia__arrow-right"></a>
+            </div>
+          </div>
+        </div>
+        <div class="advancedmedia__col">
+          <div class="advancedmedia__box">
+            <h3>Phát triển phần mềm</h3>
+            <p class="advancedmedia__box_text">Phát triển sản phẩm<br>
+              Dự án Offshore<br>
+              Tư vấn hệ thống IT
+            </p>
+          </div>
+        </div>
+        <div class="advancedmedia__col">
+          <div class="advancedmedia__box">
+            <h3>Phát triển nguồn nhân lực</h3>
+            <p class="advancedmedia__box_text">Đào tạo nhân lực<br>
+              Giới thiệu nhân lực<br>
+              Haken kỹ sư
+            </p>
+          </div>
+        </div>
+        <div class="advancedmedia__col">
+          <div class="advancedmedia__box">
+            <h3>Giải pháp doanh nghiệp</h3>
+            <p class="advancedmedia__box_text">Tư vấn kinh doanh<br>
+              Dịch vụ thuê ngoài (BPO)<br>
+              Hỗ trợ khởi nghiệp
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="solution">
+      <div class="container">
+        <h2 class="solution__title">
+          Cung cấp dịch vụ<br>
+          <span class="gradient-text">giải pháp</span>
+        </h2>
+        <div class="solution__listing">
+          <div class="solution__row">
+            <div class="solution__item">
+              <span class="solution__number">01</span>
+              <h3>Ứng dụng<br>
+                web
+              </h3>
+              <img src="https://amela.vn/wp-content/uploads/2021/08/Group-15466@2x-1.png">
+              <p>AMELA cung cấp giải pháp thiết kế, phát triển và vận hành toàn diện dịch vụ WEB, trên hầu hết các lĩnh
+                vực, như: cổng thông tin, tuyển dụng, bất động sản, tiêu dùng, … và hầu hết các ngôn ngữ lập trình: PHP,
+                Nodejs, Reactjs, Java,…
+              </p>
+            </div>
+            <div class="solution__item"
+              style="visibility: visible; animation-duration: 0.7s; animation-delay: 0.7s; animation-name: fadeInLeft;">
+              <span class="solution__number">02</span>
+              <h3>Ứng dụng<br>
+                di động
+              </h3>
+              <img src="https://amela.vn/wp-content/uploads/2021/08/Group-15467@2x.png">
+              <p>AMELA cung cấp giải pháp phát triển ứng dụng di động trọn gói, từ thiết kế, xây dựng UI / UX, phát
+                triển và vận hành. Chúng tôi đối ứng gần như toàn bộ ngôn ngữ di động hiện hành, gồm: Swift, Kotlin, và
+                cả Hybrid (React Native, Flutter, …)
+              </p>
+            </div>
+            <div class="solution__item" data-wow-delay="1.05s"
+              style="visibility: visible; animation-duration: 0.7s; animation-delay: 1.05s; animation-name: fadeInLeft;">
+              <span class="solution__number">03</span>
+              <h3>E-learning</h3>
+              <img src="https://amela.vn/wp-content/uploads/2021/08/Group-14197@2x-2.png">
+              <p>AMELA tư vấn, xây dựng và vận hành hệ thống giáo dục điện tử tối ưu cho hoạt động kinh doanh của khách
+                hàng, bao gồm tư vấn và thiết kế các giao diện học tập chú trọng đến UX của người học, thiết kế hệ thống
+                quản lý học tập (LMS) giúp hợp lý hóa công việc quản lý.
+              </p>
+            </div>
+            <div class="solution__item">
+              <span class="solution__number">04</span>
+              <h3>E-commerce</h3>
+              <img src="https://amela.vn/wp-content/uploads/2021/08/Group-15468@2x.png">
+              <p>Nắm giữ bí quyết và kinh nghiệm của các hệ thống thương mại điện tử, AMELA cung cấp các giải pháp phù
+                hợp nhất với ngân sách và mục tiêu của khách hàng, đồng hành cùng khách hàng trong suốt quá trình vận
+                hành.
+              </p>
+            </div>
+          </div>
+          <div class="solution__row">
+            <div class="solution__item">
+              <span class="solution__number">05</span>
+              <h3>Hệ thống<br>
+                nhân sự
+              </h3>
+              <img src="https://amela.vn/wp-content/uploads/2021/08/Group-14200@2x.png">
+              <p>AMELA cung cấp nhóm giải pháp phát triển hệ thống nhân sự trong công ty, trong đó chuyên gia của chúng
+                tôi sẽ phân tích công việc nhân sự của công ty khách hàng, tư vấn và phát triển một hệ thống giúp tối đa
+                hóa hiệu quả quản lý cho doanh nghiệp.
+              </p>
+            </div>
+            <div class="solution__item">
+              <span class="solution__number">06</span>
+              <h3>Sharing<br>
+                Economy
+              </h3>
+              <img src="https://amela.vn/wp-content/uploads/2021/08/Group-15469@2x.png">
+              <p>AMELA có công nghệ vượt trội và đội ngũ phát triển lành nghề có thể xây dựng các dịch vụ tối ưu trong
+                thời gian ngắn với chi phí thấp, phù hợp với thị trường kinh tế chia sẻ đang phát triển
+              </p>
+            </div>
+            <div class="solution__item">
+              <span class="solution__number">07</span>
+              <h3>Hệ thống <br>
+                bán hàng
+              </h3>
+              <img src="https://amela.vn/wp-content/uploads/2021/08/Group-14203@2x.png">
+              <p>Với kinh nghiệm đối ứng các công ty thương mại, nhà bán buôn và bán lẻ, AMELA phân tích mô hình kinh
+                doanh của khách hàng và xây dựng một hệ thống quản lý hàng tồn kho và bán hàng tối ưu nhất.
+              </p>
+            </div>
+            <div class="solution__item">
+              <span class="solution__number">08</span>
+              <h3>Video<br>
+                Streaming
+              </h3>
+              <img src="https://amela.vn/wp-content/uploads/2021/08/Group-14204@2x.png">
+              <p>Đáp ứng các nhu cầu giao tiếp trực tuyến, AMELA đưa ra giải pháp tổng thể xây dựng hệ thống và ứng dụng
+                video streaming chất lượng cao, đáp ứng lượng người dùng lớn, với chi phí <br>
+                phát triển hợp lý trong khoảng thời gian ngắn.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="technology">
+      <div class="container">
+        <h2 class="technology__title">
+          Công nghệ <span class="gradient-text">áp dụng</span>
+        </h2>
+        <div class="technology__listing">
+          <div class="technology__col ">
+            <div class="technology__inner">
+              <div class="technology__heading">
+                <h3>App<br>
+                  Development
+                </h3>
+                <span>App</span>
+              </div>
+              <div class="technology__listlogo">
+                <div class="technology__logo">
+                  <img src="https://amela.vn/wp-content/uploads/2021/08/asset-1.svg">
+                </div>
+                <div class="technology__logo">
+                  <img src="https://amela.vn/wp-content/uploads/2021/08/1.svg">
+                </div>
+                <div class="technology__logo">
+                  <img src="https://amela.vn/wp-content/uploads/2021/08/2.svg">
+                </div>
+                <div class="technology__logo">
+                  <img src="https://amela.vn/wp-content/uploads/2021/08/3-1-2.svg">
+                </div>
+                <div class="technology__logo">
+                  <img src="https://amela.vn/wp-content/uploads/2021/08/4.svg">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="technology__col ">
+            <div class="technology__inner">
+              <div class="technology__heading">
+                <h3>Web<br>
+                  Development
+                </h3>
+                <span>Web</span>
+              </div>
+              <div class="technology__listlogo">
+                <div class="technology__logo">
+                  <img src="https://amela.vn/wp-content/uploads/2021/08/2-1.svg">
+                </div>
+                <div class="technology__logo">
+                  <img src="https://amela.vn/wp-content/uploads/2021/08/3-2.svg">
+                </div>
+                <div class="technology__logo">
+                  <img src="https://amela.vn/wp-content/uploads/2021/08/4-1.svg">
+                </div>
+                <div class="technology__logo">
+                  <img src="https://amela.vn/wp-content/uploads/2021/08/5.svg">
+                </div>
+                <div class="technology__logo">
+                  <img src="https://amela.vn/wp-content/uploads/2021/08/5-1.svg">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="technology__col">
+            <div class="technology__inner">
+              <div class="technology__heading">
+                <h3>Design<br>
+                  Creative
+                </h3>
+                <span>Design</span>
+              </div>
+              <div class="technology__listlogo">
+                <div class="technology__logo">
+                  <img src="https://amela.vn/wp-content/uploads/2021/08/6.svg">
+                </div>
+                <div class="technology__logo">
+                  <img src="https://amela.vn/wp-content/uploads/2021/08/7.svg">
+                </div>
+                <div class="technology__logo">
+                  <img src="https://amela.vn/wp-content/uploads/2021/08/8.svg">
+                </div>
+                <div class="technology__logo">
+                  <img src="https://amela.vn/wp-content/uploads/2021/08/9.svg">
+                </div>
+                <div class="technology__logo">
+                  <img src="https://amela.vn/wp-content/uploads/2021/08/10.svg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="edu">
+      <div class="edu__first">
+        <a class="edu__colfirst" href="https://amela.vn/dao-tao/">
+          <h3>Phát triển chuyên môn <br>
+            và kỹ năng mềm
+          </h3>
+        </a>
+        <a class="edu__colfirst" href="https://amela.vn/dao-tao/">
+          <h3>Đào tạo văn hóa <br>
+            của người AMELA
+          </h3>
+        </a>
+      </div>
+      <div class="edu__last">
+        <a class="edu__link" href="#">
+          <video playsinline autoplay controls loop muted class="edu__video">
+            <source src="https://amela.vn/wp-content/uploads/2021/09/Sequence-01.webm" type="video/webm">
+            <source src="https://amela.vn/wp-content/uploads/2021/09/Sequence-01.mp4" type="video/mp4">
+          </video>
+          <div class="edu__contentvideo">
+            <h3>Đào tạo phát triển nhân sự<br>
+              là sứ mệnh được ưu tiên hàng đầu
+            </h3>
+            <h4>AMELA Launching Center (ALC)</h4>
+            <p>Trên chặng đường hình thành và phát triển Công ty, người AMELA luôn nỗ lực, chung tay xây dựng và duy trì
+              Văn hóa Học tập – Chia sẻ trong tổ chức. Ngày 09.09.2020, sự thành lập AMELA Launching Center (ALC) đã
+              đánh
+              dấu bước tiến lớn về định hướng tuyển dụng và đào tạo nguồn nhân lực chất lượng cao của Công ty.
+            </p>
+            <button class="video_edu_btn playing paused"><i class="icon-play-button"></i><span>Pause
+                video</span></button>
+          </div>
+        </a>
+      </div>
+    </section>
+
+
+    <section class="job">
+      <div class="container">
+        <div class="job__content">
+          <span>Tuyển dụng</span>
+          <h4>Chúng tôi cần bạn<br>để cùng nhau tạo nên những điều tuyệt vời</h4>
+          <div class="job__job"> <a href="#">
+              <span class="job__number">20+</span> <span>công việc dành cho bạn</span>
+              <i class="icon-arrow-right-thin"></i>
+            </a> </div>
+        </div>
+      </div>
+    </section>
+    <div class="section project">
+      <div class="container">
+        <div class="section__wrap project__wrap">
+          <div class="section__content project__content">
+            <span class="section__span project__number">150+ Dự án</span>
+            <h2 class="section__title project__title">Các dự án đa dạng lĩnh vực</h2>
+            <p class="section__description project__description">Đội ngũ nhân sự tại AMELA đã hoàn thiện hơn 150 dự án
+              thuộc nhiều lĩnh vực
+              khác nhau như: y tế, giáo dục, giao thông vận tải, logistics, ngân hàng, tâm lý xã hội,... và nhận được
+              những đánh giá tích cực từ phía Khách hàng.
+            </p>
+            <a class="section__btn project__btn" href="https://amela.vn/du-an/">Xem
+              thêm các dự án</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="news">
+      <div class="container">
+        <div class="news__heading">
+          <h3>Tin tức <span class="gradient-text">sự kiện</span></h3>
+          <a href="#" class="news__btn" target="">Xem thêm</a>
+        </div>
+
+        <div class="news__row">
+          <div class="news__col">
+            <a href="#" class="news__img"><img src="https://amela.vn/wp-content/uploads/2022/06/news-700x550.jpg"
+                alt="Bilac"></a>
+            <h3 class="news__title"><a href="#">Tay
+                lắc vàng Bilac nhà A
+                sẵn sàn đi ”đánh xứ người”</a>
+            </h3>
+            <span class="news__tag">#Hoạt động</span>
+            <div class="news__meta">
+
+              <div class="news__date"><i class="icon-calendar"></i>09/06/2022</div>
+              </ul>
+              <a href="https://amela.vn/tay-lac-vang-bilac-nha-a-san-sang-di-danh-xu-nguoi/" class="read-more"><i
+                  class="icon-arrow-right-thin"></i></a>
+            </div>
+          </div>
+          <div class="news__col">
+            <a href="#" class="news__img"><img
+                src="https://amela.vn/wp-content/uploads/2022/06/thumbnail-04-700x550.jpg"
+                alt="1/6, quốc tế thiếu nhi"></a>
+            <h3 class="news__title"><a href="https://amela.vn/su-kien/quoc-te-thieu-nhi-yeu-thuong/">Quốc tế thiếu nhi
+                yêu thương</a></h3>
+            <span class="news__tag">#Văn hóa</span>
+            <div class="news__meta">
+
+              <div class="news__date"><i class="icon-calendar"></i>03/06/2022</div>
+
+              <a href="https://amela.vn/su-kien/quoc-te-thieu-nhi-yeu-thuong/" class="read-more"><i
+                  class="icon-arrow-right-thin"></i></a>
+            </div>
+          </div>
+          <div class="news__col">
+            <a href="#" class="news__img"><img src="https://amela.vn/wp-content/uploads/2022/05/trainer-01-700x550.jpg"
+                alt="Train the trainer"></a>
+            <h3 class="news__title"><a
+                href="https://amela.vn/khoa-hoc-train-the-trainer-giang-vien-cung-can-di-hoc/">Khóa học Train the
+                trainer – Giảng viên cũng cần đi học</a>
+            </h3>
+            <span class="news__tag">#Đào tạo</span>
+            <div class="news__meta">
+
+              <div class="news__date"><i class="icon-calendar"></i>19/05/2022</div>
+
+              <a href="https://amela.vn/khoa-hoc-train-the-trainer-giang-vien-cung-can-di-hoc/" class="read-more"><i
+                  class="icon-arrow-right-thin"></i></a>
+            </div>
+          </div>
+          <div class="news__col">
+            <a href="#" class="news__img"><img src="https://amela.vn/wp-content/uploads/2022/04/web-04-700x550.jpg"
+                alt="Code Battle, Developer"></a>
+            <h3 class="news__title"><a href="https://amela.vn/code-battle-2022-cuoc-dua-can-nao-cua-cac-developer/">Code
+                Battle 2022 – Cuộc
+                đua cân não dành cho các Developer</a>
+            </h3>
+            <span class="news__tag">#Hoạt động</span>
+            <div class="news__meta">
+
+              <div class="news__date"><i class="icon-calendar"></i>30/04/2022</div>
+
+              <a href="https://amela.vn/code-battle-2022-cuoc-dua-can-nao-cua-cac-developer/" class="read-more"><i
+                  class="icon-arrow-right-thin"></i></a>
+            </div>
+          </div>
+          <div class="news__col">
+            <a href="#" class="news__img"><img
+                src="https://amela.vn/wp-content/uploads/2022/04/Sao-Khue-2022-02-1-01-700x550.png"
+                alt="Sao Khuê 2022"></a>
+            <h3 class="news__title"><a
+                href="https://amela.vn/amela-technology__tiep-tuc-vinh-du-dat-giai-sao-khue-2022/">AMELA
+                Technology
+                tiếp tục đạt giải Sao Khuê 2022</a>
+            </h3>
+            <span class="news__tag">#Tin nóng</span>
+            <div class="news__meta">
+
+              <div class="news__date"><i class="icon-calendar"></i>26/04/2022</div>
+
+              <a href="https://amela.vn/amela-technology__tiep-tuc-vinh-du-dat-giai-sao-khue-2022/" class="read-more"><i
+                  class="icon-arrow-right-thin"></i></a>
+            </div>
+          </div>
+          <div class="news__col">
+            <a href="#" class="news__img"><img
+                src="https://amela.vn/wp-content/uploads/2022/04/website-02-1-700x550.jpg" alt="code battle"></a>
+            <h3 class="news__title"><a href="https://amela.vn/su-kien/code-battle-version-2022-speed-up/">Code
+                Battle
+                Version 2022 – Speed
+                up</a>
+            </h3>
+            <span class="news__tag">#Chuyển động AMELA</span>
+            <div class="news__meta">
+
+              <div class="news__date"><i class="icon-calendar"></i>25/04/2022</div>
+
+              <a href="https://amela.vn/su-kien/code-battle-version-2022-speed-up/" class="read-more"><i
+                  class="icon-arrow-right-thin"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="contact">
+      <div class="contact__content">
+        <h3 class="contact__title">Liên hệ <span class="gradient-text">hợp tác</span></h3>
+        <p>
+          Hãy gửi cho chúng tôi những thắc mắc, góp ý hoặc đề nghị hợp tác của bạn. <br>Chúng tôi sẽ phản hồi trong thời
+          gian sớm nhất!
+        </p>
+        <a href="https://amela.vn/lien-he/" class="btn contact__btn" target="_blank"><i class="icon-email"></i> Liên hệ
+          với chúng tôi</a>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="footer">
+
+    <div class="footer__top">
+
+      <div class="container">
+
+        <div class="footer__listlogo">
+          <div>
+
+            <div class="footer__img">
+              <img src="https://amela.vn/wp-content/uploads/2021/08/facebook-app-logo-1.svg" alt="1">
+            </div>
+
+
+            <div class="footer__img">
+              <img src="https://amela.vn/wp-content/uploads/2021/08/linkedin-1.svg" alt="1">
+            </div>
+
+
+            <div class="footer__img">
+              <img src="https://amela.vn/wp-content/uploads/2021/08/new-youtube-logo-1.svg" alt="1">
+            </div>
+
+
+            <div class="footer__img">
+              <img src="https://amela.vn/wp-content/uploads/2021/08/behance_logo.svg" alt="1">
+            </div>
+
+            <div class="footer__img">
+              <img src="https://amela.vn/wp-content/uploads/2021/08/github_logo.svg" alt="1">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__row">
+
+        <div class="footer__left">
+          <div class="footer__col">
+            <div class="footer__logo">
+              <img src="https://amela.vn/wp-content/themes/anothemes2/images/assets/vn-ft.png" alt="flag vi">
+            </div>
+            <div class="footer__info">
+              <h3 class="widget-title">AMELA tại Việt Nam</h3>
+              <div class="textwidget">
+                <ul>
+                  <li>Tầng 5, Tháp A, Toà Keangnam,<br>
+                    Khu Đô thị mới E6 Cầu Giấy,<br>
+                    Phạm Hùng, Mễ Trì, Nam Từ Liêm, Hà Nội</li>
+                  <li>(+84)963 336 334</li>
+                  <li>info@amela.vn</li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__info">
+              <div class="textwidget">
+                <ul>
+                  <li>Tầng 20, Tháp B, Toà nhà Sông Đà,<br>
+                    Phạm Hùng, Mễ Trì, Nam Từ Liêm, Hà Nội</li>
+                  <li>(+84)963 336 334</li>
+                  <li>info@amela.vn</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__col">
+            <div class="footer__logo">
+              <img src="https://amela.vn/wp-content/themes/anothemes2/images/assets/jp-ft.png" alt="flag jp">
+            </div>
+            <div id="text-3" class="widget widget_text">
+              <h3 class="widget-title">AMELA tại Nhật</h3>
+              <div class="textwidget">
+                <ul>
+                  <li>302, 5-chome-36-2, Kameido, Koto-ku, Tokyo, Japan</li>
+                  <li>070-8345-4656</li>
+                  <li>info@amela.vn</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__right">
+          <div class="footer__col">
+
+
+            <div class="footer__menu">
+              <h3 class="widget-title">Về AMELA</h3>
+              <ul id="menu-menu-footer-1" class="menu">
+                <li class="menu-item-227"><a href="#">Về chúng tôi</a></li>
+                <li class="menu-item-229"><a href="#">Dịch vụ</a></li>
+                <li class="menu-item-226"><a href="#">Dự án</a></li>
+                <li class="menu-item-228"><a href="#">Liên hệ</a></li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="footer__col">
+
+            <div class="menu-menu-footer-2-container">
+              <ul id="menu-menu-footer-2" class="menu">
+                <li class="menu-item-811"><a href="#">Đào tạo</a></li>
+                <li class="menu-item-5748">
+                  <a href="https://amela.vn/tuyen-dung/">Tuyển dụng</a>
+                </li>
+                <li class="menu-item-230"><a href="#">Tin tức</a></li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="footer__col">
+            <div class="widget widget_text">
+
+              <div class="textwidget">
+
+                <ul>
+                  <li><a href="#">Điều khoản dịch vụ</a></li>
+                  <li><a href="#">Chính sách bảo mật</a></li>
+                </ul>
+
+                <p class="copyright">Bản quyền thuộc © AMELA Technology. JSC</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+  <script>
+
+    $(document).ready(function () {
+      $('.footer__listlogo > div').slick({
+        dots: false,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 5,
+        slidesToScroll: 4,
+        loop: true,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 15000,
+
+        centerPadding: '15px',
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+            }
+          },
+
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              dots: true,
+            }
+          },
+
+
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: true,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: true,
+              arrows: false,
+            }
+          }
+        ]
+      });
+    });
+
+    window.onscroll = function () { fuctionheaderscroll() };
+
+    var headerscroll = document.getElementById("header__scroll");
+    var sticky = headerscroll.offsetTop;
+
+    function fuctionheaderscroll() {
+      if (window.pageYOffset > sticky) {
+        headerscroll.classList.add("header__sticky");
+      } else {
+        headerscroll.classList.remove("header__sticky");
+      }
+    }
+
+    function functionresponsive(x) {
+      document.getElementById("closemenu").onclick = function () { functionclosemenu() };
+      function functionclosemenu() {
+        document.getElementById("mySidenav").style.width = "0px";
+      }
+      document.getElementById("openmenu").onclick = function () { functionopenmenu() };
+      function functionopenmenu() {
+        document.getElementById("mySidenav").style.width = "320px";
+      }
+    }
+    var x = window.matchMedia("(max-width: 991px)")
+    functionresponsive(x) // Call listener function at run time
+    x.addListener(functionresponsive) // Attach listener function on state changes
+    var header = document.getElementById("clickmenu");
+    var btns = header.getElementsByClassName("clickmenu__item");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("clickmenu__active");
+        current[0].className = current[0].className.replace(" clickmenu__active", "");
+        this.className += " clickmenu__active";
+      });
+    }
+    document.getElementById("leftsidebar__changbg").onclick = function () { functionaddclass() };
+    function functionaddclass() {
+      var element = document.getElementById("allsite");
+      element.classList.toggle("allsite");
+    }
+    document.getElementById("leftsidebar__changbg--mobile").onclick = function () { functionaddclass1() };
+    function functionaddclass1() {
+      var element = document.getElementById("allsite");
+      element.classList.toggle("allsite");
+    }
+
+
+
+
+  </script>
+</body>
+
+</html>
