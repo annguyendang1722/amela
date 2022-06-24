@@ -1,607 +1,596 @@
 <!DOCTYPE html>
 <html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="assets/css/styles.css">
+      <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
+      <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick.css">
+   </head>
+   <body id="allsite">
+      <header>
+         <div class="header header__pc">
+            <div class="container header__container">
+               <div class="header__logo">
+                  <a href="#">
+                  <img src="images/logo-svg.png" alt="">
+                  </a>
+               </div>
+               <div class="header__right">
+                  <div class="header__menu" id="header__scroll">
+                     <ul>
+                        <li>
+                           <a href="#">Giới thiệu</a>
+                        </li>
+                        <li>
+                           <a href="#">Dịch vụ </a>
+                        </li>
+                        <li>
+                           <a href="/">Giao nhận hàng hóa </a>
+                        </li>
+                        <li>
+                           <a href="#">Tin tức </a>
+                        </li>
+                        <li>
+                           <a href="#">Liên hệ </a>
+                        </li>
+                        <li>
+                           <a href="#">Tra cứu vận đơn </a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="header__language">
+                     <ul>
+                        <li>
+                           <a target="_blank" href="https://amela.co.jp/">
+                           <img src="https://amela.vn/wp-content/themes/anothemes2/images/assets/jp.png">Japan
+                           </a>
+                        </li>
+                        <li>
+                           <a><img src="https://amela.vn/wp-content/themes/anothemes2/images/assets/globe.png">vn<i
+                              class="ico-down-arrow"></i>
+                           </a>
+                           <ul class="open">
+                              <li>Việt Nam</li>
+                              <li><a href="https://amela.vn/en/">English</a></li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="headermobile leftsidebar__logo">
+            <div class="headermobile__left">
+               <a href="#">
+               <img class="leftsidebar__logo--white" src="images/logo-svg.png" alt="brand">
+               <img class="leftsidebar__logo--black" src="images/logo-svg.png" alt="brand">
+               </a>
+            </div>
+            <div class="headermobile__right">
+               <div class="headermobile__changbg" id="leftsidebar__changbg--mobile">
+                  <span class="leftsidebar__changbg--white">
+                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z">
+                        </path>
+                     </svg>
+                  </span>
+                  <span class="leftsidebar__changbg--black">
+                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z">
+                        </path>
+                     </svg>
+                  </span>
+               </div>
+               <div class="open" id="openmenu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+            </div>
+         </div>
+         <div id="mySidenav" class="leftsidebar">
+            <a href="javascript:void(0)" class="closemenu" id="closemenu">&times;</a>
+            <div class="leftsidebar__logo" id="leftsidebar__logo">
+               <a href="#">
+               <img class="leftsidebar__logo--white" src="images/logo-svg.png" alt="brand">
+               <img class="leftsidebar__logo--black" src="images/logo-svg.png" alt="brand">
+               </a>
+               <div class="leftsidebar__changbg" id="leftsidebar__changbg">
+                  <span class="leftsidebar__changbg--white">
+                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z">
+                        </path>
+                     </svg>
+                  </span>
+                  <span class="leftsidebar__changbg--black">
+                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z">
+                        </path>
+                     </svg>
+                  </span>
+               </div>
+            </div>
+            <div class="leftsidebar__menu">
+               <div class="leftsidebar__language header__language">
+                  <ul>
+                     <li>
+                        <a target="_blank" href="https://amela.co.jp/">
+                        <img src="https://amela.vn/wp-content/themes/anothemes2/images/assets/jp.png">Japan
+                        </a>
+                     </li>
+                     <li>
+                        <a><img src="https://amela.vn/wp-content/themes/anothemes2/images/assets/globe.png">vn<i
+                           class="ico-down-arrow"></i>
+                        </a>
+                        <ul class="open">
+                           <li>Việt Nam</li>
+                           <li><a href="https://amela.vn/en/">English</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+               <ul id="clickmenu" class="clickmenu">
+                  <li class="clickmenu__item clickmenu__active">
+                     <a href="#home">Home</a>
+                  </li>
+                  <li class="clickmenu__item">
+                     <a href="#about">About</a>
+                  </li>
+                  <li class="clickmenu__item">
+                     <a href="#service">Service</a>
+                  </li>
+                  <li class="clickmenu__item">
+                     <a href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="clickmenu__item">
+                     <a href="#testimonial">Testimonial</a>
+                  </li>
+                  <li class="clickmenu__item">
+                     <a href="#blog">Blog</a>
+                  </li>
+                  <li class="clickmenu__item">
+                     <a href="#contact">Contact</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </header>
+      <div class="rightsidebar">
+         <div class="newsbg">
+            <img class="newsbg__left" width="467" height="460"
+               src="https://amela.vn/wp-content/uploads/2021/07/solution-banner-bg-left.png">
+            <img class="newsbg__right" width="783" height="777"
+               src="https://amela.vn/wp-content/uploads/2021/07/solution-banner-bg-right.png">
+            <img class="newsbg__center" src="https://amela.vn/wp-content/themes/anothemes2/images/solution-banner-bg.png">
+         </div>
+         <div class="newscate">
+            <div class="container">
+               <h1 class="newscate__title">Chúng tôi xây dựng<br>
+                  các ứng dụng <span class="gradient-text">mobile</span> &amp; <span class="gradient-text">website</span>
+               </h1>
+            </div>
+         </div>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
-  <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick.css">
-</head>
-
-<body id="allsite">
-  <header>
-    <div class="header">
-      <div class="container header__container">
-        <div class="header__logo">
-          <a href="#">
-            <img src="https://tinthanh.vn/public/uploads/images/logo/tinthanh-300.jpg">
-          </a>
-        </div>
-        <div class="header__menu" id="header__scroll">
-          <ul>
-            <li>
-              <a href="#">Giới thiệu</a>
-            </li>
-            <li>
-              <a href="#">Dịch vụ </a>
-            </li>
-            <li>
-              <a href="/">Giao nhận hàng hóa </a>
-            </li>
-            <li>
-              <a href="#">Tin tức </a>
-            </li>
-            <li>
-              <a href="#">Liên hệ </a>
-            </li>
-            <li>
-              <a href="#">Tra cứu vận đơn </a>
-            </li>
-          </ul>
-        </div>
+         <section class="news news--project">
+            <div class="container">
+               <div class="news__listtag">
+                  <ul>
+                     <li><a class="filter-all" data-id="all_post">Tất cả</a></li>
+                     <li><a class="app" data-id="18">#App</a></li>
+                     <li><a class="website" data-id="19">#Website</a></li>
+                     <li><a class="e-learning" data-id="20">#E-learning</a></li>
+                     <li><a class="e-commerce" data-id="21">#E-commerce</a></li>
+                     <li><a class="video-streaming" data-id="23">#Video Streaming</a></li>
+                     <li><a class="hr-system" data-id="24">#HR system</a></li>
+                  </ul>
+               </div>
+               <div class="news__listing">
+                  <div class="news__row">
+                     <div class="news__col">
+                        <a href="#/booking-su-kien-cho-tre-em/" class="news__img">
+                        <img src="https://amela.vn/wp-content/uploads/2021/08/Thumbnail-web-6-700x550.png">
+                        </a>
+                        <h3 class="news__title">
+                           <a href="#/booking-su-kien-cho-tre-em/">Booking sự kiện cho trẻ
+                           em</a>
+                        </h3>
+                        <div class="news__cat">
+                           <ul>
+                              <li><a href="#">IOS App</a><span> / </span></li>
+                              <li><a href="#/">Android App</a><span> / </span></li>
+                           </ul>
+                           <a href="#/booking-su-kien-cho-tre-em/"><i class="icon-arrow-right-thin"></i></a>
+                        </div>
+                     </div>
+                     <div class="news__col">
+                        <a href="#/live-stream-cho-thu-cung/" class="news__img">
+                        <img src="https://amela.vn/wp-content/uploads/2021/08/Thumbnail-web-5-700x550.png">
+                        </a>
+                        <h3 class="news__title"><a href="#/live-stream-cho-thu-cung/">Live stream cho thú
+                           cưng</a>
+                        </h3>
+                        <div class="news__cat">
+                           <ul>
+                              <li><a href="#">IOS App</a><span> / </span></li>
+                              <li><a href="#/">Android App</a><span> / </span></li>
+                           </ul>
+                           <a href="#/live-stream-cho-thu-cung/"><i class="icon-arrow-right-thin"></i></a>
+                        </div>
+                     </div>
+                     <div class="news__col">
+                        <a href="#/mang-xa-hoi-cho-nguoi-ung-thu/" class="news__img">
+                        <img src="https://amela.vn/wp-content/uploads/2021/08/Thumbnail-web-4-700x550.png">
+                        </a>
+                        <h3 class="news__title"><a href="#/mang-xa-hoi-cho-nguoi-ung-thu/">Mạng xã hội cho
+                           người ung thư</a>
+                        </h3>
+                        <div class="news__cat">
+                           <ul>
+                              <li><a href="#">IOS App</a><span> / </span></li>
+                              <li><a href="#/">Android App</a><span> / </span></li>
+                           </ul>
+                           <a href="#/mang-xa-hoi-cho-nguoi-ung-thu/"><i class="icon-arrow-right-thin"></i></a>
+                        </div>
+                     </div>
+                     <div class="news__col">
+                        <a href="#/ung-dung-dat-giao-do-an/" class="news__img">
+                        <img src="https://amela.vn/wp-content/uploads/2021/07/Thumbnail-web-3-1-700x550.png">
+                        </a>
+                        <h3 class="news__title"><a href="#/ung-dung-dat-giao-do-an/">Ứng dụng đặt/giao đồ
+                           ăn</a>
+                        </h3>
+                        <div class="news__cat">
+                           <ul>
+                              <li><a href="#">IOS App</a><span> / </span></li>
+                              <li><a href="#/">Android App</a><span> / </span></li>
+                           </ul>
+                           <a href="#/ung-dung-dat-giao-do-an/"><i class="icon-arrow-right-thin"></i></a>
+                        </div>
+                     </div>
+                     <div class="news__col">
+                        <a href="#/dat-quan-ly-lich-phong-kham/" class="news__img">
+                        <img src="https://amela.vn/wp-content/uploads/2021/07/Thumbnail-web-1-1-700x550.png">
+                        </a>
+                        <h3 class="news__title"><a href="#/dat-quan-ly-lich-phong-kham/">Đặt và quản lý lịch
+                           phòng khám</a>
+                        </h3>
+                        <div class="news__cat">
+                           <ul>
+                              <li><a href="#">IOS App</a><span> / </span></li>
+                              <li><a href="#/">Android App</a><span> / </span></li>
+                           </ul>
+                           <a href="#/dat-quan-ly-lich-phong-kham/"><i class="icon-arrow-right-thin"></i></a>
+                        </div>
+                     </div>
+                     <div class="news__col">
+                        <a href="#/he-thong-quan-tri-nhan-su/" class="news__img">
+                        <img src="https://amela.vn/wp-content/uploads/2021/07/Thumbnail-web-4-700x550.png">
+                        </a>
+                        <h3 class="news__title">
+                           <a href="#/he-thong-quan-tri-nhan-su/">Hệ thống quản trị nhân
+                           sự</a>
+                        </h3>
+                        <div class="news__cat">
+                           <ul>
+                              <li><a href="https://amela.vn/news__category/website/">Website</a><span> / </span></li>
+                              <li><a href="https://amela.vn/news__category/cms/">CMS</a><span> / </span></li>
+                           </ul>
+                           <a href="#/he-thong-quan-tri-nhan-su/"><i class="icon-arrow-right-thin"></i></a>
+                        </div>
+                     </div>
+                     <div class="news__col">
+                        <a href="#/website-dau-gia-truc-tuyen/" class="news__img">
+                        <img src="https://amela.vn/wp-content/uploads/2021/07/Essentina-1-700x550.png">
+                        </a>
+                        <h3 class="news__title"><a href="#/website-dau-gia-truc-tuyen/">Website đấu giá trực
+                           tuyến</a>
+                        </h3>
+                        <div class="news__cat">
+                           <ul>
+                              <li><a href="https://amela.vn/news__category/website/">Website</a><span> / </span></li>
+                           </ul>
+                           <a href="#/website-dau-gia-truc-tuyen/"><i class="icon-arrow-right-thin"></i></a>
+                        </div>
+                     </div>
+                     <div class="news__col">
+                        <a href="#/giai-phai-livestream-cho-nghe-si/" class="news__img"><img
+                           src="https://amela.vn/wp-content/uploads/2021/07/Fanclub-700x550.png"></a>
+                        <h3 class="news__title"><a href="#/giai-phai-livestream-cho-nghe-si/">Giải pháp
+                           livestream cho nghệ sĩ</a>
+                        </h3>
+                        <div class="news__cat">
+                           <ul>
+                              <li><a href="https://amela.vn/news__category/website/">Website</a><span> / </span></li>
+                              <li><a href="#">IOS App</a><span> / </span></li>
+                              <li><a href="#/">Android App</a><span> / </span></li>
+                           </ul>
+                           <a href="#/giai-phai-livestream-cho-nghe-si/"><i class="icon-arrow-right-thin"></i></a>
+                        </div>
+                     </div>
+                     <div class="news__col">
+                        <a href="#/ung-dung-hen-ho-cho-nguoi-nhat/" class="news__img"><img
+                           src="https://amela.vn/wp-content/uploads/2021/07/Thumbnail-web-3-700x550.png"></a>
+                        <h3 class="news__title"><a href="#/ung-dung-hen-ho-cho-nguoi-nhat/">Ứng dụng hẹn hò cho
+                           người Nhật</a>
+                        </h3>
+                        <div class="news__cat">
+                           <ul>
+                              <li><a href="#">IOS App</a><span> / </span></li>
+                              <li><a href="#/">Android App</a><span> / </span></li>
+                           </ul>
+                           <a href="#/ung-dung-hen-ho-cho-nguoi-nhat/"><i class="icon-arrow-right-thin"></i></a>
+                        </div>
+                     </div>
+                     <div class="news__col">
+                        <a href="#/kiem-dinh-va-mua-ban-do-co/" class="news__img"><img
+                           src="https://amela.vn/wp-content/uploads/2021/07/Thumbnail-web-2-1-700x550.png"></a>
+                        <h3 class="news__title"><a href="#/kiem-dinh-va-mua-ban-do-co/">Kiểm định và mua bán đồ
+                           cổ</a>
+                        </h3>
+                        <div class="news__cat">
+                           <ul>
+                              <li><a href="#">IOS App</a><span> / </span></li>
+                              <li><a href="#/">Android App</a><span> / </span></li>
+                           </ul>
+                           <a href="#/kiem-dinh-va-mua-ban-do-co/"><i class="icon-arrow-right-thin"></i></a>
+                        </div>
+                     </div>
+                     <div class="news__col">
+                        <a href="#/ung-dung-gap-go-ket-noi/" class="news__img"><img
+                           src="https://amela.vn/wp-content/uploads/2021/07/Thumbnail-web-2-700x550.png"></a>
+                        <h3 class="news__title"><a href="#/ung-dung-gap-go-ket-noi/">Ứng dụng gặp gỡ/kết
+                           nối</a>
+                        </h3>
+                        <div class="news__cat">
+                           <ul>
+                              <li><a href="#">IOS App</a><span> / </span></li>
+                              <li><a href="#/">Android App</a><span> / </span></li>
+                           </ul>
+                           <a href="#/ung-dung-gap-go-ket-noi/"><i class="icon-arrow-right-thin"></i></a>
+                        </div>
+                     </div>
+                     <div class="news__col">
+                        <a href="#/ung-dung-hoc-truc-tuyen/" class="news__img"><img
+                           src="https://amela.vn/wp-content/uploads/2021/07/Thumbnail-web-1-700x550.png"></a>
+                        <h3 class="news__title"><a href="#/ung-dung-hoc-truc-tuyen/">Ứng dụng học trực
+                           tuyến</a>
+                        </h3>
+                        <div class="news__cat">
+                           <ul>
+                              <li><a href="#">IOS App</a><span> / </span></li>
+                              <li><a href="#/">Android App</a><span> / </span></li>
+                           </ul>
+                           <a href="#/ung-dung-hoc-truc-tuyen/"><i class="icon-arrow-right-thin"></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="news__navigation">
+                  <nav>
+                     <li>
+                        <a aria-current="page" class="current">1</a>
+                     </li>
+                     <li><a href="/page/2/">2</a></li>
+                     <li><a class="news__next" href="/page/2/"><i class="fa fa-angle-right"></i></a></li>
+                  </nav>
+               </div>
+            </div>
+         </section>
       </div>
-    </div>
-    <div class="headermobile leftsidebar__logo">
-      <div class="headermobile__left">
-        <a href="#">
-          <img class="leftsidebar__logo--white" src="images/dark.png" alt="brand">
-          <img class="leftsidebar__logo--black" src="images/light.png" alt="brand">
-        </a>
-      </div>
-      <div class="headermobile__right">
-        <div class="headermobile__changbg" id="leftsidebar__changbg--mobile">
-          <span class="leftsidebar__changbg--white">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
-              width="1em" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z">
-              </path>
-            </svg>
-          </span>
-          <span class="leftsidebar__changbg--black">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
-              width="1em" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z">
-              </path>
-            </svg>
-          </span>
-        </div>
-        <div class="open" id="openmenu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </div>
-    <div id="mySidenav" class="leftsidebar">
-      <a href="javascript:void(0)" class="closemenu" id="closemenu">&times;</a>
-      <div class="leftsidebar__logo" id="leftsidebar__logo">
-        <a href="#">
-          <img class="leftsidebar__logo--white" src="images/dark.png" alt="brand">
-          <img class="leftsidebar__logo--black" src="images/light.png" alt="brand">
-        </a>
-        <div class="leftsidebar__changbg" id="leftsidebar__changbg">
-          <span class="leftsidebar__changbg--white">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
-              width="1em" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z">
-              </path>
-            </svg>
-          </span>
-          <span class="leftsidebar__changbg--black">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
-              width="1em" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z">
-              </path>
-            </svg>
-          </span>
-        </div>
-      </div>
-      <div class="leftsidebar__menu">
-        <ul id="clickmenu" class="clickmenu">
-          <li class="clickmenu__item clickmenu__active">
-            <a href="#home"><img class="svg custom" src="images/home.svg" alt="icon">Home</a>
-          </li>
-          <li class="clickmenu__item">
-            <a href="#about"><img class="svg custom" src="images/human.svg" alt="icon">About</a>
-          </li>
-          <li class="clickmenu__item">
-            <a href="#service"><img class="svg custom" src="images/service.svg" alt="icon">Service</a>
-          </li>
-          <li class="clickmenu__item">
-            <a href="#portfolio"><img class="svg custom" src="images/portfolio.svg" alt="icon">Portfolio</a>
-          </li>
-          <li class="clickmenu__item">
-            <a href="#testimonial"><img class="svg custom" src="images/testimonial.svg" alt="icon">Testimonial</a>
-          </li>
-          <li class="clickmenu__item">
-            <a href="#blog"><img class="svg custom" src="images/blog.svg" alt="icon">Blog</a>
-          </li>
-          <li class="clickmenu__item">
-            <a href="#contact"><img class="svg custom" src="images/contact.svg" alt="icon">Contact</a>
-          </li>
-        </ul>
-      </div>
-      <div class="leftsidebar__author">
-        <div class="author__image">
-          <img src="images/avatar.jpg" alt="brand">
-        </div>
-        <div class="author__text">
-          <h3>Nelson</h3>
-          <a href="mailto:ib-themes21@gmail.com">support@gmail.com</a>
-        </div>
-      </div>
-    </div>
-  </header>
-  <div class="rightsidebar">
-    <div class="newsbg">
-      <img class="newsbg__left" width="467" height="460"
-        src="https://amela.vn/wp-content/uploads/2021/07/solution-banner-bg-left.png">
-      <img class="newsbg__right" width="783" height="777"
-        src="https://amela.vn/wp-content/uploads/2021/07/solution-banner-bg-right.png">
-      <img class="newsbg__center" src="https://amela.vn/wp-content/themes/anothemes2/images/solution-banner-bg.png">
-    </div>
-    <div class="newscate">
-      <div class="container">
-        <h1 class="newscate__title">Chúng tôi xây dựng<br>
-          các ứng dụng <span class="gradient-text">mobile</span> &amp; <span class="gradient-text">website</span></h1>
-      </div>
-    </div>
-    <div class="news">
-      <div class="container">
-        <div class="news__listtag">
-          <ul>
-            <li class="news__tag"><a class="filter-all" data-id="all_post">Tất cả</a></li>
-            <li class="news__tag"><a class="app" data-id="18">#App</a></li>
-            <li class="news__tag"><a class="website" data-id="19">#Website</a></li>
-            <li class="news__tag"><a class="e-learning" data-id="20">#E-learning</a></li>
-            <li class="news__tag"><a class="e-commerce" data-id="21">#E-commerce</a></li>
-            <li class="news__tag"><a class="video-streaming" data-id="23">#Video Streaming</a></li>
-            <li class="news__tag"><a class="hr-system" data-id="24">#HR system</a></li>
-          </ul>
-        </div>
-        <div class="news__listing">
-          <div class="row">
-            <div class="news__col">
-              <a href="#/booking-su-kien-cho-tre-em/" class="news__img">
-                <img src="https://amela.vn/wp-content/uploads/2021/08/Thumbnail-web-6-700x550.png">
-              </a>
-              <h3 class="news__title">
-                <a href="#/booking-su-kien-cho-tre-em/">Booking sự kiện cho trẻ
-                  em</a>
-              </h3>
-              <div class="news__cat">
-                <ul>
-                  <li><a href="#">IOS App</a><span> / </span></li>
-                  <li><a href="#/">Android App</a><span> / </span></li>
-                </ul> <a href="#/booking-su-kien-cho-tre-em/"><i class="icon-arrow-right-thin"></i></a>
-              </div>
-
+      <footer class="footer">
+         <div class="footer__top">
+            <div class="container">
+               <div class="footer__listlogo">
+                  <div>
+                     <div class="footer__img">
+                        <img src="https://amela.vn/wp-content/uploads/2021/08/facebook-app-logo-1.svg" alt="1">
+                     </div>
+                     <div class="footer__img">
+                        <img src="https://amela.vn/wp-content/uploads/2021/08/linkedin-1.svg" alt="1">
+                     </div>
+                     <div class="footer__img">
+                        <img src="https://amela.vn/wp-content/uploads/2021/08/new-youtube-logo-1.svg" alt="1">
+                     </div>
+                     <div class="footer__img">
+                        <img src="https://amela.vn/wp-content/uploads/2021/08/behance_logo.svg" alt="1">
+                     </div>
+                     <div class="footer__img">
+                        <img src="https://amela.vn/wp-content/uploads/2021/08/github_logo.svg" alt="1">
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div class="news__col">
-
-              <a href="#/live-stream-cho-thu-cung/" class="news__img">
-                <img src="https://amela.vn/wp-content/uploads/2021/08/Thumbnail-web-5-700x550.png">
-              </a>
-              <h3 class="news__title"><a href="#/live-stream-cho-thu-cung/">Live stream cho thú
-                  cưng</a></h3>
-              <div class="news__cat">
-                <ul>
-                  <li><a href="#">IOS App</a><span> / </span></li>
-                  <li><a href="#/">Android App</a><span> / </span></li>
-                </ul> <a href="#/live-stream-cho-thu-cung/"><i class="icon-arrow-right-thin"></i></a>
-              </div>
-
+         </div>
+         <div class="footer__bottom">
+            <div class="container">
+               <div class="footer__row">
+                  <div class="footer__left">
+                     <div class="footer__col">
+                        <div class="footer__logo">
+                           <img src="https://amela.vn/wp-content/themes/anothemes2/images/assets/vn-ft.png" alt="flag vi">
+                        </div>
+                        <div class="footer__info">
+                           <h3 class="widget-title">AMELA tại Việt Nam</h3>
+                           <div class="textwidget">
+                              <ul>
+                                 <li>Tầng 5, Tháp A, Toà Keangnam,<br>
+                                    Khu Đô thị mới E6 Cầu Giấy,<br>
+                                    Phạm Hùng, Mễ Trì, Nam Từ Liêm, Hà Nội
+                                 </li>
+                                 <li>(+84)963 336 334</li>
+                                 <li>info@amela.vn</li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="footer__info footer__infosecond">
+                           <div class="textwidget">
+                              <ul>
+                                 <li>Tầng 20, Tháp B, Toà nhà Sông Đà,<br>
+                                    Phạm Hùng, Mễ Trì, Nam Từ Liêm, Hà Nội
+                                 </li>
+                                 <li>(+84)963 336 334</li>
+                                 <li>info@amela.vn</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="footer__col">
+                        <div class="footer__logo">
+                           <img src="https://amela.vn/wp-content/themes/anothemes2/images/assets/jp-ft.png" alt="flag jp">
+                        </div>
+                        <div id="text-3" class="widget widget_text">
+                           <h3 class="widget-title">AMELA tại Nhật</h3>
+                           <div class="textwidget">
+                              <ul>
+                                 <li>302, 5-chome-36-2, Kameido, Koto-ku, Tokyo, Japan</li>
+                                 <li>070-8345-4656</li>
+                                 <li>info@amela.vn</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="footer__right">
+                     <div class="footer__col">
+                        <div class="footer__menu">
+                           <h3 class="widget-title">Về AMELA</h3>
+                           <ul id="menu-menu-footer-1" class="menu">
+                              <li class="menu-item-227"><a href="#">Về chúng tôi</a></li>
+                              <li class="menu-item-229"><a href="#">Dịch vụ</a></li>
+                              <li class="menu-item-226"><a href="#">Dự án</a></li>
+                              <li class="menu-item-228"><a href="#">Liên hệ</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="footer__col footer__colsecond">
+                        <div class="menu-menu-footer-2-container">
+                           <ul id="menu-menu-footer-2" class="menu">
+                              <li class="menu-item-811"><a href="#">Đào tạo</a></li>
+                              <li class="menu-item-5748">
+                                 <a href="https://amela.vn/tuyen-dung/">Tuyển dụng</a>
+                              </li>
+                              <li class="menu-item-230"><a href="#">Tin tức</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="footer__col">
+                        <div class="widget widget_text">
+                           <div class="textwidget">
+                              <ul>
+                                 <li><a href="#">Điều khoản dịch vụ</a></li>
+                                 <li><a href="#">Chính sách bảo mật</a></li>
+                              </ul>
+                              <p class="copyright">Bản quyền thuộc © AMELA Technology. JSC</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div class="news__col">
-
-              <a href="#/mang-xa-hoi-cho-nguoi-ung-thu/" class="news__img">
-                <img src="https://amela.vn/wp-content/uploads/2021/08/Thumbnail-web-4-700x550.png">
-              </a>
-              <h3 class="news__title"><a href="#/mang-xa-hoi-cho-nguoi-ung-thu/">Mạng xã hội cho
-                  người ung thư</a></h3>
-              <div class="news__cat">
-                <ul>
-                  <li><a href="#">IOS App</a><span> / </span></li>
-                  <li><a href="#/">Android App</a><span> / </span></li>
-                </ul> <a href="#/mang-xa-hoi-cho-nguoi-ung-thu/"><i class="icon-arrow-right-thin"></i></a>
-              </div>
-
-            </div>
-            <div class="news__col">
-
-              <a href="#/ung-dung-dat-giao-do-an/" class="news__img">
-                <img src="https://amela.vn/wp-content/uploads/2021/07/Thumbnail-web-3-1-700x550.png">
-              </a>
-              <h3 class="news__title"><a href="#/ung-dung-dat-giao-do-an/">Ứng dụng đặt/giao đồ
-                  ăn</a></h3>
-              <div class="news__cat">
-                <ul>
-                  <li><a href="#">IOS App</a><span> / </span></li>
-                  <li><a href="#/">Android App</a><span> / </span></li>
-                </ul> <a href="#/ung-dung-dat-giao-do-an/"><i class="icon-arrow-right-thin"></i></a>
-              </div>
-
-            </div>
-            <div class="news__col">
-
-              <a href="#/dat-quan-ly-lich-phong-kham/" class="news__img">
-                <img src="https://amela.vn/wp-content/uploads/2021/07/Thumbnail-web-1-1-700x550.png">
-              </a>
-              <h3 class="news__title"><a href="#/dat-quan-ly-lich-phong-kham/">Đặt và quản lý lịch
-                  phòng khám</a></h3>
-              <div class="news__cat">
-                <ul>
-                  <li><a href="#">IOS App</a><span> / </span></li>
-                  <li><a href="#/">Android App</a><span> / </span></li>
-                </ul> <a href="#/dat-quan-ly-lich-phong-kham/"><i class="icon-arrow-right-thin"></i></a>
-              </div>
-
-            </div>
-            <div class="news__col">
-
-              <a href="#/he-thong-quan-tri-nhan-su/" class="news__img">
-                <img src="https://amela.vn/wp-content/uploads/2021/07/Thumbnail-web-4-700x550.png">
-              </a>
-              <h3 class="news__title">
-                <a href="#/he-thong-quan-tri-nhan-su/">Hệ thống quản trị nhân
-                  sự</a>
-              </h3>
-              <div class="news__cat">
-                <ul>
-                  <li><a href="https://amela.vn/news__category/website/">Website</a><span> / </span></li>
-                  <li><a href="https://amela.vn/news__category/cms/">CMS</a><span> / </span></li>
-                </ul> <a href="#/he-thong-quan-tri-nhan-su/"><i class="icon-arrow-right-thin"></i></a>
-              </div>
-
-            </div>
-            <div class="news__col">
-
-              <a href="#/website-dau-gia-truc-tuyen/" class="news__img">
-                <img src="https://amela.vn/wp-content/uploads/2021/07/Essentina-1-700x550.png">
-              </a>
-              <h3 class="news__title"><a href="#/website-dau-gia-truc-tuyen/">Website đấu giá trực
-                  tuyến</a></h3>
-              <div class="news__cat">
-                <ul>
-                  <li><a href="https://amela.vn/news__category/website/">Website</a><span> / </span></li>
-                </ul> <a href="#/website-dau-gia-truc-tuyen/"><i class="icon-arrow-right-thin"></i></a>
-              </div>
-
-            </div>
-            <div class="news__col">
-
-              <a href="#/giai-phai-livestream-cho-nghe-si/" class="news__img"><img
-                  src="https://amela.vn/wp-content/uploads/2021/07/Fanclub-700x550.png"></a>
-              <h3 class="news__title"><a href="#/giai-phai-livestream-cho-nghe-si/">Giải pháp
-                  livestream cho nghệ sĩ</a>
-              </h3>
-              <div class="news__cat">
-                <ul>
-                  <li><a href="https://amela.vn/news__category/website/">Website</a><span> / </span></li>
-                  <li><a href="#">IOS App</a><span> / </span></li>
-                  <li><a href="#/">Android App</a><span> / </span></li>
-                </ul> <a href="#/giai-phai-livestream-cho-nghe-si/"><i class="icon-arrow-right-thin"></i></a>
-              </div>
-
-            </div>
-            <div class="news__col">
-
-              <a href="#/ung-dung-hen-ho-cho-nguoi-nhat/" class="news__img"><img
-                  src="https://amela.vn/wp-content/uploads/2021/07/Thumbnail-web-3-700x550.png"></a>
-              <h3 class="news__title"><a href="#/ung-dung-hen-ho-cho-nguoi-nhat/">Ứng dụng hẹn hò cho
-                  người Nhật</a></h3>
-              <div class="news__cat">
-                <ul>
-                  <li><a href="#">IOS App</a><span> / </span></li>
-                  <li><a href="#/">Android App</a><span> / </span></li>
-                </ul> <a href="#/ung-dung-hen-ho-cho-nguoi-nhat/"><i class="icon-arrow-right-thin"></i></a>
-              </div>
-
-            </div>
-            <div class="news__col">
-
-              <a href="#/kiem-dinh-va-mua-ban-do-co/" class="news__img"><img
-                  src="https://amela.vn/wp-content/uploads/2021/07/Thumbnail-web-2-1-700x550.png"></a>
-              <h3 class="news__title"><a href="#/kiem-dinh-va-mua-ban-do-co/">Kiểm định và mua bán đồ
-                  cổ</a></h3>
-              <div class="news__cat">
-                <ul>
-                  <li><a href="#">IOS App</a><span> / </span></li>
-                  <li><a href="#/">Android App</a><span> / </span></li>
-                </ul> <a href="#/kiem-dinh-va-mua-ban-do-co/"><i class="icon-arrow-right-thin"></i></a>
-              </div>
-
-            </div>
-            <div class="news__col">
-
-              <a href="#/ung-dung-gap-go-ket-noi/" class="news__img"><img
-                  src="https://amela.vn/wp-content/uploads/2021/07/Thumbnail-web-2-700x550.png"></a>
-              <h3 class="news__title"><a href="#/ung-dung-gap-go-ket-noi/">Ứng dụng gặp gỡ/kết
-                  nối</a></h3>
-              <div class="news__cat">
-                <ul>
-                  <li><a href="#">IOS App</a><span> / </span></li>
-                  <li><a href="#/">Android App</a><span> / </span></li>
-                </ul> <a href="#/ung-dung-gap-go-ket-noi/"><i class="icon-arrow-right-thin"></i></a>
-              </div>
-
-            </div>
-            <div class="news__col">
-
-              <a href="#/ung-dung-hoc-truc-tuyen/" class="news__img"><img
-                  src="https://amela.vn/wp-content/uploads/2021/07/Thumbnail-web-1-700x550.png"></a>
-              <h3 class="news__title"><a href="#/ung-dung-hoc-truc-tuyen/">Ứng dụng học trực
-                  tuyến</a></h3>
-              <div class="news__cat">
-                <ul>
-                  <li><a href="#">IOS App</a><span> / </span></li>
-                  <li><a href="#/">Android App</a><span> / </span></li>
-                </ul> <a href="#/ung-dung-hoc-truc-tuyen/"><i class="icon-arrow-right-thin"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="news__navigation">
-          <nav>
-            <li>
-              <span aria-current="page" class="current">1</span>
-            </li>
-            <li><a href="/page/2/">2</a></li>
-            <li><a class="news__next" href="/page/2/"><i class="fa fa-angle-right"></i></a></li>
-          </nav>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <footer class="footer">
-
-    <div class="footer__top">
-
-      <div class="container">
-
-        <div class="footer__listlogo">
-          <div>
-
-            <div class="footer__img">
-              <img src="https://amela.vn/wp-content/uploads/2021/08/facebook-app-logo-1.svg" alt="1">
-            </div>
-
-
-            <div class="footer__img">
-              <img src="https://amela.vn/wp-content/uploads/2021/08/linkedin-1.svg" alt="1">
-            </div>
-
-
-            <div class="footer__img">
-              <img src="https://amela.vn/wp-content/uploads/2021/08/new-youtube-logo-1.svg" alt="1">
-            </div>
-
-
-            <div class="footer__img">
-              <img src="https://amela.vn/wp-content/uploads/2021/08/behance_logo.svg" alt="1">
-            </div>
-
-            <div class="footer__img">
-              <img src="https://amela.vn/wp-content/uploads/2021/08/github_logo.svg" alt="1">
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer__bottom">
-      <div class="container">
-
-        <div class="footer-left">
-          <div class="footer__col">
-            <div class="footer__logo">
-              <img src="https://amela.vn/wp-content/themes/anothemes2/images/assets/vn-ft.png" alt="flag vi">
-            </div>
-            <div class="footer__info">
-              <h3 class="widget-title">AMELA tại Việt Nam</h3>
-              <div class="textwidget">
-                <ul>
-                  <li>Tầng 5, Tháp A, Toà Keangnam,<br>
-                    Khu Đô thị mới E6 Cầu Giấy,<br>
-                    Phạm Hùng, Mễ Trì, Nam Từ Liêm, Hà Nội</li>
-                  <li>(+84)963 336 334</li>
-                  <li>info@amela.vn</li>
-                </ul>
-              </div>
-            </div>
-            <div class="footer__info">
-              <div class="textwidget">
-                <ul>
-                  <li>Tầng 20, Tháp B, Toà nhà Sông Đà,<br>
-                    Phạm Hùng, Mễ Trì, Nam Từ Liêm, Hà Nội</li>
-                  <li>(+84)963 336 334</li>
-                  <li>info@amela.vn</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer__col">
-            <div class="footer__logo">
-              <img src="https://amela.vn/wp-content/themes/anothemes2/images/assets/jp-ft.png" alt="flag jp">
-            </div>
-            <div id="text-3" class="widget widget_text">
-              <h3 class="widget-title">AMELA tại Nhật</h3>
-              <div class="textwidget">
-                <ul>
-                  <li>302, 5-chome-36-2, Kameido, Koto-ku, Tokyo, Japan</li>
-                  <li>070-8345-4656</li>
-                  <li>info@amela.vn</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-right">
-          <div class="footer__col">
-
-
-            <div class="footer__menu">
-              <h3 class="widget-title">Về AMELA</h3>
-              <ul id="menu-menu-footer-1" class="menu">
-                <li class="menu-item-227"><a href="#">Về chúng tôi</a></li>
-                <li class="menu-item-229"><a href="#">Dịch vụ</a></li>
-                <li class="menu-item-226"><a href="#">Dự án</a></li>
-                <li class="menu-item-228"><a href="#">Liên hệ</a></li>
-              </ul>
-            </div>
-
-          </div>
-          <div class="footer__col">
-
-            <div class="menu-menu-footer-2-container">
-              <ul id="menu-menu-footer-2" class="menu">
-                <li class="menu-item-811"><a href="#">Đào tạo</a></li>
-                <li class="menu-item-5748">
-                  <a href="https://amela.vn/tuyen-dung/">Tuyển dụng</a>
-                </li>
-                <li class="menu-item-230"><a href="#">Tin tức</a></li>
-              </ul>
-            </div>
-
-          </div>
-          <div class="footer__col">
-            <div class="widget widget_text">
-
-              <div class="textwidget">
-
-                <ul>
-                  <li><a href="#">Điều khoản dịch vụ</a></li>
-                  <li><a href="#">Chính sách bảo mật</a></li>
-                </ul>
-
-                <p class="copyright">Bản quyền thuộc © AMELA Technology. JSC</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
-  <script>
-
-    $(document).ready(function () {
-      $('.footer__listlogo > div').slick({
-        dots: false,
-        infinite: true,
-        speed: 1000,
-        slidesToShow: 5,
-        slidesToScroll: 4,
-        loop: true,
-        arrows: true,
-        autoplay: true,
-        autoplaySpeed: 15000,
-
-        centerPadding: '15px',
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-            }
-          },
-
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              dots: true,
-            }
-          },
-
-
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              dots: true,
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              dots: true,
-              arrows: false,
-            }
-          }
-        ]
-      });
-    });
-
-    window.onscroll = function () { fuctionheaderscroll() };
-
-    var headerscroll = document.getElementById("header__scroll");
-    var sticky = headerscroll.offsetTop;
-
-    function fuctionheaderscroll() {
-      if (window.pageYOffset > sticky) {
-        headerscroll.classList.add("header__sticky");
-      } else {
-        headerscroll.classList.remove("header__sticky");
-      }
-    }
-
-    function functionresponsive(x) {
-      document.getElementById("closemenu").onclick = function () { functionclosemenu() };
-      function functionclosemenu() {
-        document.getElementById("mySidenav").style.width = "0px";
-      }
-      document.getElementById("openmenu").onclick = function () { functionopenmenu() };
-      function functionopenmenu() {
-        document.getElementById("mySidenav").style.width = "320px";
-      }
-    }
-    var x = window.matchMedia("(max-width: 991px)")
-    functionresponsive(x) // Call listener function at run time
-    x.addListener(functionresponsive) // Attach listener function on state changes
-    var header = document.getElementById("clickmenu");
-    var btns = header.getElementsByClassName("clickmenu__item");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("clickmenu__active");
-        current[0].className = current[0].className.replace(" clickmenu__active", "");
-        this.className += " clickmenu__active";
-      });
-    }
-    document.getElementById("leftsidebar__changbg").onclick = function () { functionaddclass() };
-    function functionaddclass() {
-      var element = document.getElementById("allsite");
-      element.classList.toggle("allsite");
-    }
-    document.getElementById("leftsidebar__changbg--mobile").onclick = function () { functionaddclass1() };
-    function functionaddclass1() {
-      var element = document.getElementById("allsite");
-      element.classList.toggle("allsite");
-    }
-
-
-
-
-  </script>
-</body>
-
+         </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+      <script>
+         $(document).ready(function () {
+         $('.footer__listlogo > div').slick({
+         dots: false,
+         infinite: true,
+         speed: 1000,
+         slidesToShow: 5,
+         slidesToScroll: 4,
+         loop: true,
+         arrows: true,
+         autoplay: true,
+         autoplaySpeed: 15000,
+         centerPadding: '15px',
+         responsive: [
+         {
+         breakpoint: 1024,
+         settings: {
+         slidesToShow: 3,
+         slidesToScroll: 3,
+         infinite: true,
+         }
+         },
+         {
+         breakpoint: 991,
+         settings: {
+         slidesToShow: 2,
+         slidesToScroll: 2,
+         dots: true,
+         }
+         },
+         {
+         breakpoint: 600,
+         settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         dots: true,
+         }
+         },
+         {
+         breakpoint: 480,
+         settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         dots: true,
+         arrows: false,
+         }
+         }
+         ]
+         });
+         });
+         window.onscroll = function () { fuctionheaderscroll() };
+         var headerscroll = document.getElementById("header__scroll");
+         var sticky = headerscroll.offsetTop;
+         function fuctionheaderscroll() {
+         if (window.pageYOffset > sticky) {
+         headerscroll.classList.add("header__sticky");
+         } else {
+         headerscroll.classList.remove("header__sticky");
+         }
+         }
+         function functionresponsive(x) {
+         document.getElementById("closemenu").onclick = function () { functionclosemenu() };
+         function functionclosemenu() {
+         document.getElementById("mySidenav").style.width = "0px";
+         }
+         document.getElementById("openmenu").onclick = function () { functionopenmenu() };
+         function functionopenmenu() {
+         document.getElementById("mySidenav").style.width = "320px";
+         }
+         }
+         var x = window.matchMedia("(max-width: 991px)")
+         functionresponsive(x) // Call listener function at run time
+         x.addListener(functionresponsive) // Attach listener function on state changes
+         var header = document.getElementById("clickmenu");
+         var btns = header.getElementsByClassName("clickmenu__item");
+         for (var i = 0; i < btns.length; i++) {
+         btns[i].addEventListener("click", function () {
+         var current = document.getElementsByClassName("clickmenu__active");
+         current[0].className = current[0].className.replace(" clickmenu__active", "");
+         this.className += " clickmenu__active";
+         });
+         }
+         document.getElementById("leftsidebar__changbg").onclick = function () { functionaddclass() };
+         function functionaddclass() {
+         var element = document.getElementById("allsite");
+         element.classList.toggle("allsite");
+         }
+         document.getElementById("leftsidebar__changbg--mobile").onclick = function () { functionaddclass1() };
+         function functionaddclass1() {
+         var element = document.getElementById("allsite");
+         element.classList.toggle("allsite");
+         }
+      </script>
+   </body>
 </html>

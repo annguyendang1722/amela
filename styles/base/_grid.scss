@@ -1,0 +1,27 @@
+// Grid variables
+$containerMarginMobile: 20px;
+$containerMargin: 15px;
+$container: 960px;
+$containerWide: 1140px;
+$containerSuperWide: 1280px;
+$containerMediumWide: 1224px;
+
+.container {
+  padding-right: $containerMargin;
+  padding-left: $containerMargin;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 9;
+
+  @media (min-width: 1200px) {
+    width: 1140px;
+  }
+
+  @media (min-width: $tabletOnly) {
+    width: 970px;
+  }
+
+  @media (min-width: $tablet) {
+    width: 750px;
+  }
+}

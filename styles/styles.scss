@@ -1,0 +1,29 @@
+//Include styles for Modern Browsers
+@charset 'UTF-8';
+
+// Reset
+@import 'base/reset';
+
+// Variables
+@import 'base/variables';
+
+//Helpers classes
+@import 'base/helpers';
+@import 'base/functions';
+@import 'base/mixins';
+
+// Base Style
+@import 'base/fonts';
+@import 'base/icons';
+@import 'base/grid';
+@import 'base/extends';
+@import 'base/typography';
+@import 'base/form';
+@import 'base/table';
+
+// Layouts
+@import 'layouts/header';
+@import 'layouts/footer';
+
+//Components
+@import './components/section';

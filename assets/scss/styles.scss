@@ -1011,6 +1011,67 @@ header {
 		z-index: 999;
 	}
 
+	&__listtag {
+		ul {
+			display: flex;
+			padding-left: 0px;
+
+			li {
+				margin-right: 12px;
+
+				a {
+					color: #2CFFFE;
+					line-height: 34px;
+					font-size: 16px;
+					border: 1px solid #2CFFFE;
+					border-radius: 18px;
+					padding: 0 12px;
+					height: 36px;
+					display: block;
+					position: relative;
+					overflow: hidden;
+					cursor: pointer;
+				}
+
+			}
+
+		}
+
+	}
+
+	&__navigation {
+		nav {
+			display: flex;
+			justify-content: center;
+
+			li {
+				&::marker {
+					display: none;
+				}
+
+			}
+
+			.current {
+				color: #FEA628;
+			}
+
+			a {
+				border-radius: 2px;
+				height: 24px;
+				width: 24px;
+				line-height: 22px;
+				text-align: center;
+				border: 1px solid #fff;
+				margin: 0 3px;
+				font-size: 14px;
+				color: #fff;
+				display: block;
+			}
+
+		}
+
+	}
+
 	&__title {
 		line-height: 23px;
 		height: 2.5rem;
@@ -1026,6 +1087,37 @@ header {
 	&__date {
 		font-size: 14px;
 		color: #BABABA;
+	}
+
+	&__next {
+		background: rgba(255, 255, 255, 0.7) !important;
+		color: #000000 !important;
+		border-color: rgba(255, 255, 255, 0.7) !important;
+	}
+
+	&__cat {
+		ul {
+			display: flex;
+			list-style: none;
+			padding-left: 0px;
+
+			a {
+				color: #BABABA;
+			}
+
+		}
+
+	}
+
+	&--project {
+		padding-top: 60px;
+		.news {
+			&__title {
+				margin-bottom: 0px;
+			}
+
+		}
+
 	}
 
 }
@@ -1170,7 +1262,8 @@ header {
 	&__content {
 		@media(min-width:991px) {
 			position: absolute;
-			transform: translate(0%, -50%);padding-top: 590px;
+			transform: translate(0%, -50%);
+			padding-top: 590px;
 		}
 
 		z-index: 999;
@@ -1219,12 +1312,12 @@ header {
 	&__infotext, &__infoimage {
 		flex-basis: 50%;
 		max-width: 50%;
-	
-				@media(min-width:991px)
-				{
-					max-width: 100%;
-					flex-basis: 100%;
-				}
+
+		@media(min-width:991px) {
+			max-width: 100%;
+			flex-basis: 100%;
+		}
+
 	}
 
 	&__list {
@@ -1238,12 +1331,13 @@ header {
 		max-width: 33.33333%;
 		padding: 53px 49px 51px 42px;
 		background: linear-gradient(135deg, rgba(30, 30, 30, 1) 0%, rgba(0, 0, 0, 1) 100%);
-		@media(max-width: 991px)
-		{
+
+		@media(max-width:991px) {
 			margin-bottom: 20px;
-			flex-basis:100%;
-			max-width:100%;
+			flex-basis: 100%;
+			max-width: 100%;
 		}
+
 	}
 
 	&__title {
@@ -1262,10 +1356,11 @@ header {
 				text-align: right;
 				max-width: 100%;
 				flex-basis: 100%;
-				@media(min-width:991px)
-				{
+
+				@media(min-width:991px) {
 					padding: 348px 0 45px;
 				}
+
 				padding: 100px 0 45px;
 			}
 
@@ -1290,6 +1385,38 @@ header {
 
 		}
 
+	}
+
+}
+.newscate 
+{
+	padding-top: 200px;
+	h1 
+	{
+		color: white;
+	}
+}
+.newsbg {
+	position: relative;
+
+	&__left {
+		left: -11%;
+		top: 100px;
+	}
+
+	&__right {
+		top: -122px;
+		right: -11%;
+	}
+
+	&__center {
+		top: 7%;
+		left: 28%;
+	}
+
+	img {
+		position: absolute;
+		z-index: -1;
 	}
 
 }
